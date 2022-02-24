@@ -1,0 +1,71 @@
+:root {
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--dark-grayish-blue);
+}
+main {
+  background-color: var(--grayish-blue);
+  padding: 10px;
+  margin: 150px auto 200px;
+  border-radius: 10px;
+  position: relative;
+  max-width: 338px;
+  width: 100%;
+}
+#advice {
+  color: var(--neon-green);
+  text-align: center;
+}
+#quote {
+  color: white;
+  text-align: center;
+  font-size: 28px;
+}
+#divider {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.divider-container {
+  position: relative;
+}
+.divider-container::before {
+  content: "";
+  display: block;
+  width: 128px;
+  height: 1px;
+  background: white;
+  position: absolute;
+  left: 0;
+  top: 14%;
+}
+.divider-container::after {
+  content: "";
+  display: block;
+  width: 128px;
+  height: 1px;
+  background: white;
+  position: absolute;
+  right: 0;
+  top: 14%;
+}
+#dice {
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+  background-color: var(--neon-green);
+  position: absolute;
+  right: 41%;
+  bottom: -29px;
+  border-radius: 50%;
+  width: 40px;
+  height: auto;
+}
+@media only screen and (min-width: 375px) {
+}
